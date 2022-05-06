@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilado grids general index */
+.gral-bod{
+    display: grid;
+    grid-template-areas:
+    nav
+    header
+    main
+    footer;
+}
+
+/* estilado invidual de cada area de grid */
+.nav-index{
+    grid-area: nav;
+}
+
+.header-index{
+    grid-area: header;
+}
+
+.main-index{
+    grid-area: main;
+}
+
+.footer-index{
+    grid-area: footer;
+}
+
+/* estilado del formulario de consulta con css */
+.form-regist{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px; 
+    font-family: "calibri";
+    color: antiquewhite;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-regist h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.complet{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: "calibri";
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.form-regist .boton-f{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    font-family: "calibri";
+} 
+
+/* estilos de media-querie */
+@media screen and(min-width:720px){
+    .main-index .main-princ{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nos-part{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .alg-clientes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .alg-clientes .img-cli{
+        width: 100px;
+    }
+
+    .footer-index{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
