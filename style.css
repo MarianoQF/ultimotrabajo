@@ -4,36 +4,58 @@
     box-sizing: border-box;
 }
 
-/* estilado grids general index */
-.gral-bod{
+/* Estilado con grids main del index */
+.main-index{
     display: grid;
     grid-template-areas:
-    nav
-    header
-    main
-    footer;
+    'text-maindex'
+    'imagen-maindex'
+    'titulo-maindex'
+    'alg-clientes'
+    ; 
 }
 
-/* estilado invidual de cada area de grid */
-.nav-index{
-    grid-area: nav;
+.text-maindex{
+    grid-area: text-maindex;
 }
 
-.header-index{
-    grid-area: header;
+.imagen-maindex{
+    grid-area: imagen-maindex;
 }
 
-.main-index{
-    grid-area: main;
+.titulo-maindex{
+    grid-area: titulo-maindex;
 }
 
-.footer-index{
-    grid-area: footer;
+.alg-clientes{
+    grid-area: alg-clientes;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
-/* estilado del formulario de consulta con css */
+    /* Mediascreen */
+@media screen and (min-width:768px) {
+    .main-index{
+        display: grid;
+        grid-template-areas:
+        'text-maindex imagen-maindex'
+        'titulo-maindex titulo-maindex'
+        'alg-clientes alg-clientes'
+    }
+
+    .alg-clientes{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+}
+/* Estilado del formulario de consulta con css */
 .form-regist{
-    width: 400px;
+    width: 700px;
     background: #24303c;
     padding: 30px;
     margin: auto;
@@ -72,36 +94,22 @@
     font-family: "calibri";
 } 
 
-/* estilos de media-querie */
-@media screen and(min-width:720px){
-    .main-index .main-princ{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
+.foot-gral{
+    color: whitesmoke;
+    background-color: black;
+}
 
-    .nos-part{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+/* estilados puntuales de todos los html */
+.inv-form{
+    width:30%;
+    padding: 5px;
+    font-size: 30px;
+}
 
-    .alg-clientes{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+.img-cli{
+    width: 300px;
+}
 
-    .alg-clientes .img-cli{
-        width: 100px;
-    }
-
-    .footer-index{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+.parraf-gral{
+    font-size: 25px;
 }

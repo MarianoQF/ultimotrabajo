@@ -19,47 +19,49 @@
 </head>
 
 <body>
-    <div class="gral-bod">
-    <!--barra de navegacion-->
-    <div class="nav-index">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">MQ Digital</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <!--barra de navegacion-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">MQ Digital</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="sobrenos.html">Sobre Nosotros</a>
-                    <a class="nav-link" href="formacion.html">Formación</a>
-                    <a class="nav-link" href="experiencia.html">Experiencia</a>
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </div>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="sobrenos.html">Sobre Nosotros</a>
+              <a class="nav-link" href="formacion.html">Formación</a>
+              <a class="nav-link" href="experiencia.html">Experiencia</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </div>
-            </div>
-        </nav>
-    </div>
+          </div>
+        </div>
+    </nav>
 
-    <header class="header-index">
-           <img src="./imagenes/portada.png" alt="imagen ilustrativa mq digital">
+
+    <!-- header -->
+    <header>
+           <img class="w-100" src="./imagenes/portada.png" alt="imagen ilustrativa mq digital">
     </header>
 
     <!--main contenido general-->
     <main class="main-index">
-        <section class="main-princ">
-            <div>
+        <section class="text-maindex p-5 d-flex align-items-center">
+            <div class="text-center">
                 <h3>Cambiamos la forma de relacionarte con tus clientes</h3>
-                <p>Empezamos como agencia de marketing y nos transformamos en partners estratégicos para generar resultados de crecimiento sostenido en base a objetivos planteados.<br> Trabajamos con Pymes y Grandes Empresas.</p>
-            </div>
-            <img class="img-pagPrinc" src="imagenes/imgdiscuatro.png" alt="imagen ilustrativa de mqdigital">            
+                <p class="parraf-gral">Empezamos como agencia de marketing y nos transformamos en partners estratégicos para generar resultados de crecimiento sostenido en base a objetivos planteados.<br> Trabajamos con Pymes y Grandes Empresas.</p>
+            </div>           
         </section>
 
-        <div class="nos-part">
-            <h2>Nuestros partners</h2>
-        </div>
-        
-        <section class="alg-clientes">
+        <section class="imagen-maindex p-5 d-flex align-items-center">
+            <img src="imagenes/imgdiscuatro.png" alt="imagen ilustrativa de mqdigital"> 
+        </section>
+
+        <section class="titulo-maindex p-3">
+            <h2 class="nus-pat d-flex align-items-center justify-content-center">Nuestros partners</h2>
+        </section> 
+
+        <section class="alg-clientes p-3">
                 <img class="img-cli" src="imagenes/clientuno.png" alt="logo cp event planner">
                 <img class="img-cli" src="imagenes/clientdos.png" alt="logo qmakert distribuciones">
                 <img class="img-cli" src="imagenes/clienttres.png" alt="logo kineliv">
@@ -68,14 +70,14 @@
     </main>
 
     <!--footer-->
-    <footer class="footer-index">  
-        <li>instagram</li>
-        <li>facebook</li>
-        <li>linkedin</li>
-        <li>twitter</li>
+    <footer class="foot-gral container p-3">  
+      <div class="row">
+        <div class="col">Instagram</div>
+        <div class="col">Facebook</div>
+        <div class="col">Linkedin</div>
+        <div class="col">Twitter</div>
+      </div>
     </footer>
-
-    </div>
 
     <!-- link js de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
